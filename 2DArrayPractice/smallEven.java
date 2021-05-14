@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class smallEven here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class smallEven
 {
       public static void main(String args[]){
@@ -22,7 +15,7 @@ public class smallEven
      }
      int x;
      x = array[0] %2;
-     if(x==0){
+     if(x == 0){
      System.out.println("Smallest number in the array is: "+array[0]);
    }
  }
