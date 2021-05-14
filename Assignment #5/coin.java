@@ -1,25 +1,26 @@
 public class coin
 {
      
-private double myVal; 
+private double myValue; 
 private String myName; 
  
-    public coin(double val, String name) { 
-        myVal = val; 
+    public coin(double value, String name) { 
+        myValue = value; 
         myName = name; 
     } 
  
     public double getValue() { 
-        return myVal; 
+        return myValue; 
     } 
  
     public String getName() { 
         return myName;
     }    
  
-
-public boolean equals(coin coin1, coin coin2) { 
-    if(coin1.getValue()==(coin2.getVal())&&(coin1.getName().equals(coin2.getName()))){
+// returns true if this coin is equal to aCoin, 
+// which means the name and the value are both equal 
+public boolean equals(Coin aCoin, Coin Bcoin) { 
+    if(aCoin.getValue()==(Bcoin.getValue())&&(aCoin.getName().equals(Bcoin.getName()))){
     return true;
     }else{
     return false;
