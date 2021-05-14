@@ -16,7 +16,7 @@ public class smallEven
      int x;
      x = array[0] %2;
      if(x == 0){
-     System.out.println("Smallest number in the array is: "+array[0]);
+     System.out.println("Smallest number in the array is: " +array[0]);
    }
  }
 }
