@@ -13,10 +13,10 @@ public class assignment5
         count+= a.length();
         return counter;
     }
-    public int findPostion(ArrayList<Integer> list, int keyVal){
+    public int findPostion(ArrayList<Integer> list, int keyValure){
         int counter = 0;
        for(int i = 0; i < list.size();i++){
-            if(list.get(i) == keyVal)
+            if(list.get(i) == keyValue)
             counter ++;
         }
         if(counter == 0)
