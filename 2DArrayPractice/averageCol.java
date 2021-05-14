@@ -2,8 +2,8 @@
 /**
  * Write a description of class averageCol here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Aidan Schmidt
+ * @version 05/12/2021
  */
 import java.util.Scanner;
 public class averageCol
