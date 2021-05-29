@@ -1,12 +1,14 @@
 /**
  * Write a description of class Digits here.
  *
- * @author Aidan Schmidt
+ * Aidan Schmidt
  * May 28 2021
  */
 import java.util.*;
+
 public class Digits { 
-private ArrayList<Integer> digitList = new ArrayList<>(); 
+
+    private ArrayList<Integer> digitList = new ArrayList<>(); 
     public Digits(int num) { 
     while (num > 0) {
       digitList.add(num % 10);
