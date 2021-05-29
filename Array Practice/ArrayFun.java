@@ -5,25 +5,27 @@
  * May 28 2021
  */
 import java.util.*;
+
 public class ArrayFun
 {
     private int[] nums;
     private int[] mixedNums;
-    public ArrayFun(int[] arr)
-    {
+    
+    public ArrayFun(int[] arr){
         nums = arr.clone();
         arrayMixup(arr);
     }
-    public int[] getNums()
-    {
+    
+    public int[] getNums(){
         return nums;
     }
-    public int[] getMixedNums()
-    {
+    
+    public int[] getMixedNums(){
         return mixedNums;
     }
-    private void arrayMixup(int[] in)
-    {
+    
+    
+    private void arrayMixup(int[] in){
         int[] tempArray = in.clone();
         mixedNums = in.clone();
         mixedNums[0] = tempArray[tempArray.length - 1];
@@ -38,8 +40,8 @@ public class ArrayFun
             }
         }
     }
-    public int greatestDiff()
-    {
+    
+    public int greatestDiff(){
         int numsNum1 = 0;
         int numsNum2 = 0;
         int mixedNumNums1 = 0;
@@ -53,29 +55,36 @@ public class ArrayFun
                 temp = nums[i]; 
              }
         }
+        
         numsNum1 = temp;
         tempList.add(temp);
         temp = mixedNums[0];
+        
         for (int i = 0; i < mixedNums.length; i++){
              if(mixedNums[i]>temp){
                  temp = mixedNums[i];
              }
         }
+        
         mixedNumNums1 = temp;
         tempList.add(temp);
+        
         for (int i = 0; i < nums.length; i++){ 
              if(nums[i]<temp){
                 temp = nums[i]; 
              }
         }
+        
         numsNum1 = temp;
         tempList.add(temp);
         temp = mixedNums[0];
+        
         for (int i = 0; i < mixedNums.length; i++){
              if(mixedNums[i]<temp){
                  temp = mixedNums[i];
              }
         }
+        
         mixedNumNums1 = temp;
         tempList.add(temp);
         temp = mixedNums[0];
